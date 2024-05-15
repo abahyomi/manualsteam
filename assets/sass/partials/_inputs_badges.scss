@@ -16,10 +16,10 @@ input{
 }
 
 .input_dark{
-    background-color: $secondary500;
-    color: $primary300;
+    background-color: #04050E;
+    color: white;
     transition: 200ms;
-    border: 1px solid $primary500;
+    border: 1px solid $primary300;
 
     &:hover{
         box-shadow: 0px 4px 16px rgba(21, 46, 55, 0.3);
@@ -48,8 +48,8 @@ input{
 }
 
 .input_primary{
-    background-color: $primary500;
-    color: $secondary500;
+    background-color: #111216;
+    color: white;
     transition: 200ms;
     border: 1px solid $secondary500;
 
@@ -70,13 +70,14 @@ input{
 
 .badge{
     align-items: flex-start;
-    padding: 4px 8px;
+    padding: 1rem;
     text-align: center;
-    border-radius: 9px;
+    border-radius: .5rem;
 
     &-primary{
         background-color: $primary500;
-        color: $secondary500;
+        color: white;
+        cursor: pointer;
     }
 
     &-dark{
@@ -91,6 +92,6 @@ input{
 
     &-secondary{
         background-color: $secondary400;
-        color: $primary300;
+        color: $primary700;
     }
 }

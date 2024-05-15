@@ -1,7 +1,4 @@
 @charset "UTF-8";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 @font-face {
   font-family: "Semi-Bold";
   src: url(../../fonts/Poppins-SemiBold.woff);
@@ -267,6 +264,10 @@ span, .span {
   flex-direction: column;
   gap: 0.5rem;
 }
+.button_section .muestra_botones .icon_show {
+  display: flex;
+  gap: 2rem;
+}
 @media (max-width: 500px) {
   .button_section .muestra_botones .icon_show {
     display: flex;
@@ -293,116 +294,114 @@ button, .button {
   align-items: center;
   justify-content: center;
   font-size: 0.75rem;
-  padding: 1rem 2rem;
-  border-radius: 9px;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .btn-primary-dark_main {
-  background-color: #1d1e20;
-  color: #0047FF;
+  background-color: #1c1c1c;
+  color: white;
   transition: 300ms;
 }
 .btn-primary-dark_main:hover {
   cursor: pointer;
-  background-color: #919697;
+  background-color: #1A316A;
+  color: white;
   transition: 100ms;
 }
 .btn-primary-dark_main:active {
   transform: scale(95%);
-  border: 1px solid #6286E5;
+  background-color: #0047FF;
   box-shadow: 0px 4px 9px rgba(21, 46, 55, 0.41);
-  border-radius: 9px;
   transition: 100ms;
 }
 .btn-primary-dark_secondary {
-  background-color: #919697;
-  color: #CDDBFF;
+  background-color: #0047FF;
+  color: white;
   transition: 300ms;
 }
 .btn-primary-dark_secondary:hover {
+  border: 1px solid #0047FF;
   cursor: pointer;
-  background-color: #e7ecee;
+  background-color: #1A316A;
   transition: 100ms;
 }
 .btn-primary-dark_secondary:active {
   transform: scale(95%);
-  border: 1px solid #CDDBFF;
-  border-radius: 9px;
+  color: #0047FF;
+  background-color: white;
   transition: 100ms;
 }
 .btn-primary-light {
-  background-color: #CDDBFF;
-  color: #1d1e20;
-  border: 1px solid #1d1e20;
+  background-color: white;
+  color: #0047FF;
 }
 .btn-primary-light:hover {
   cursor: pointer;
-  background-color: #0047FF;
+  border: 1px solid #0047FF;
   transition: 100ms;
 }
 .btn-primary-light:active {
   transform: scale(95%);
-  box-shadow: 0px 4px 13px rgba(213, 178, 32, 0.71);
-  border-radius: 9px;
   transition: 100ms;
 }
 
 .btn-icon-dark_main {
-  background-color: #1d1e20;
-  color: #0047FF;
+  background-color: #1c1c1c;
+  color: white;
   transition: 300ms;
 }
 .btn-icon-dark_main:hover {
   cursor: pointer;
-  background-color: #919697;
+  background-color: #1A316A;
+  color: white;
   transition: 100ms;
 }
 .btn-icon-dark_main:active {
   transform: scale(95%);
-  border: 1px solid #6286E5;
+  background-color: #0047FF;
   box-shadow: 0px 4px 9px rgba(21, 46, 55, 0.41);
-  border-radius: 9px;
   transition: 100ms;
 }
 .btn-icon-dark_secondary {
-  background-color: #919697;
-  color: #CDDBFF;
+  background-color: #0047FF;
+  color: white;
   transition: 300ms;
 }
 .btn-icon-dark_secondary:hover {
+  border: 1px solid #0047FF;
   cursor: pointer;
-  background-color: #e7ecee;
+  background-color: #1A316A;
   transition: 100ms;
 }
 .btn-icon-dark_secondary:active {
   transform: scale(95%);
-  border: 1px solid #CDDBFF;
-  border-radius: 9px;
+  color: #0047FF;
+  background-color: white;
   transition: 100ms;
 }
 .btn-icon-light {
-  background-color: #CDDBFF;
-  color: #1d1e20;
+  background-color: white;
+  color: #0047FF;
 }
 .btn-icon-light:hover {
   cursor: pointer;
-  background-color: #0047FF;
+  border: 1px solid #0047FF;
   transition: 100ms;
 }
 .btn-icon-light:active {
   transform: scale(95%);
-  box-shadow: 0px 4px 13px rgba(213, 178, 32, 0.71);
-  border-radius: 9px;
   transition: 100ms;
 }
 
 .btn-ghost {
-  color: #1d1e20;
+  color: white;
   transition: 300ms;
+  justify-content: center;
 }
 .btn-ghost:hover {
   cursor: pointer;
-  background-color: #1d1e20;
+  background-color: white;
   transition: 100ms;
   color: #0047FF;
 }
@@ -475,16 +474,17 @@ ul li:active {
 }
 
 span {
-  padding: 0.75rem;
+  padding: 0.5rem 0.75rem;
   transition: 200ms;
   margin-bottom: 0.5rem;
   border-radius: 9px;
 }
-span:hover {
+
+.section:hover {
   color: #0047FF;
   cursor: pointer;
 }
-span:active {
+.section:active {
   color: #CDDBFF;
   transform: scale(95%);
 }
@@ -507,6 +507,12 @@ span:active {
   display: block;
   max-height: 100px;
   gap: 1rem;
+}
+
+.hero {
+  padding: 1rem 1rem 4rem 1rem;
+  border-bottom: 0.5px solid rgb(180, 200, 231);
+  margin-bottom: 2rem;
 }
 
 .tipografía .Intro {
@@ -713,10 +719,10 @@ input {
 }
 
 .input_dark {
-  background-color: #1d1e20;
-  color: #CDDBFF;
+  background-color: #04050E;
+  color: white;
   transition: 200ms;
-  border: 1px solid #0047FF;
+  border: 1px solid #CDDBFF;
 }
 .input_dark:hover {
   box-shadow: 0px 4px 16px rgba(21, 46, 55, 0.3);
@@ -741,8 +747,8 @@ input {
 }
 
 .input_primary {
-  background-color: #0047FF;
-  color: #1d1e20;
+  background-color: #111216;
+  color: white;
   transition: 200ms;
   border: 1px solid #1d1e20;
 }
@@ -761,13 +767,14 @@ input {
 
 .badge {
   align-items: flex-start;
-  padding: 4px 8px;
+  padding: 1rem;
   text-align: center;
-  border-radius: 9px;
+  border-radius: 0.5rem;
 }
 .badge-primary {
   background-color: #0047FF;
-  color: #1d1e20;
+  color: white;
+  cursor: pointer;
 }
 .badge-dark {
   background-color: #1d1e20;
@@ -780,7 +787,7 @@ input {
 }
 .badge-secondary {
   background-color: #919697;
-  color: #CDDBFF;
+  color: #04050E;
 }
 
 .search-dark {
@@ -833,8 +840,8 @@ label .alert_error .alertClose {
   margin: 0;
 }
 label .alert_succes {
-  background-color: #1d1e20;
-  color: #CDDBFF;
+  background-color: #0047FF;
+  color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -849,8 +856,8 @@ label .alert_succes .alertClose {
   margin: 0;
 }
 label .alert_notice {
-  background-color: #0047FF;
-  color: #1d1e20;
+  background-color: #111216;
+  color: #e7ecee;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1259,8 +1266,8 @@ a {
 .Header {
   grid-area: 1/1/2/-1;
   background: rgba(3, 3, 18, 0.2);
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   color: #fff;
   padding: 1rem 3rem;
   display: flex;

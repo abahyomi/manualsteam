@@ -24,6 +24,8 @@
         }
 
         .icon_show{
+            display: flex;
+            gap: 2rem;
             @media (max-width:500px){
                 display: flex;
                 flex-direction: row;
@@ -51,66 +53,64 @@ button, .button{
     align-items: center;
     justify-content: center;
     font-size: 0.75rem;
-    padding: 1rem 2rem;
-    border-radius: 9px;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .btn-primary{
    
     &-dark_main{
-        background-color: $secondary500;
-        color: $primary500;
+        background-color: #1c1c1c;
+        color: white;
         transition: 300ms;
         
 
         &:hover{
             cursor: pointer;
-            background-color: $secondary400;
+            background-color: #1A316A;
+            color: white;
             transition: 100ms;
         }
 
         &:active{
             transform: scale(95%);
-            border: 1px solid $primary400;
+            background-color:$primary500;
             box-shadow: 0px 4px 9px rgba(21, 46, 55, 0.41);
-            border-radius: 9px;
             transition: 100ms;
         }
     }
 
     &-dark_secondary{
-        background-color: $secondary400;
-        color: $primary300;
+        background-color: $primary500;
+        color: white;
         transition: 300ms;
         
         &:hover{
+            border: 1px solid $primary500;
             cursor: pointer;
-            background-color: $secondary300;
+            background-color: #1A316A;
             transition: 100ms;
         }
         &:active{
             transform: scale(95%);
-            border: 1px solid $primary300;
-            border-radius: 9px;
+            color: $primary500;
+            background-color: white;
             transition: 100ms;
         }
     }
 
     &-light{ 
-        background-color: $primary300;
-        color: $secondary500;
-        border: 1px solid $secondary500;
+        background-color: white;
+        color: $primary500;
 
         &:hover{
             cursor: pointer;
-            background-color: $primary500;
+            border: 1px solid $primary500;
             transition: 100ms;
         }
 
         &:active{
             transform: scale(95%);
-            box-shadow: 0px 4px 13px rgba(213, 178, 32, 0.71);
-            border-radius: 9px;
             transition: 100ms;
         }
     }
@@ -119,55 +119,56 @@ button, .button{
 
 .btn-icon{
     &-dark_main{
-        background-color: $secondary500;
-        color: $primary500;
+        background-color: #1c1c1c;
+        color: white;
         transition: 300ms;
+
         &:hover{
             cursor: pointer;
-            background-color: $secondary400;
-            transition: 100ms;
-        }
-        &:active{
-            transform: scale(95%);
-            border: 1px solid $primary400;
-            box-shadow: 0px 4px 9px rgba(21, 46, 55, 0.41);
-            border-radius: 9px;
-            transition: 100ms;
-        }
-    }
-    &-dark_secondary{
-        background-color: $secondary400;
-        color: $primary300;
-        transition: 300ms;
-    
-        &:hover{
-            cursor: pointer;
-            background-color: $secondary300;
+            background-color: #1A316A;
+            color: white;
             transition: 100ms;
         }
 
         &:active{
             transform: scale(95%);
-            border: 1px solid $primary300;
-            border-radius: 9px;
+            background-color:$primary500;
+            box-shadow: 0px 4px 9px rgba(21, 46, 55, 0.41);
+            transition: 100ms;
+        }
+    }
+    &-dark_secondary{
+        background-color: $primary500;
+        color: white;
+        transition: 300ms;
+    
+        &:hover{
+            border: 1px solid $primary500;
+            cursor: pointer;
+            background-color: #1A316A;
+            transition: 100ms;
+        }
+
+        &:active{
+            transform: scale(95%);
+            color: $primary500;
+            background-color: white;
             transition: 100ms;
         }
     }
     
     &-light{ 
-        background-color: $primary300;
-        color: $secondary500;
+        background-color: white;
+        color: $primary500;
        
         &:hover{
             cursor: pointer;
-            background-color: $primary500;
+            border: 1px solid $primary500;
             transition: 100ms;
         }
 
         &:active{
             transform: scale(95%);
-            box-shadow: 0px 4px 13px rgba(213, 178, 32, 0.71);
-            border-radius: 9px;
             transition: 100ms;
         }
     }
@@ -175,12 +176,13 @@ button, .button{
 
 
 .btn-ghost{
-    color: $secondary500;
+    color: white;
     transition: 300ms;
+    justify-content: center;
     
     &:hover{
         cursor: pointer;
-        background-color: $secondary500;
+        background-color: white;
         transition: 100ms;
         color: $primary500;
     }

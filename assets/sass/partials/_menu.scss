@@ -24,11 +24,13 @@ ul {
 }
 
 span{
-    padding: .75rem;
+    padding: .5rem .75rem;
     transition: 200ms;
     margin-bottom: .5rem;
     border-radius: 9px;
+}
 
+.section{
     &:hover{
         color: $primary500;
         cursor: pointer;
