@@ -1,0 +1,128 @@
+.color {
+    &-Primary300 {
+        color: $primary300;
+    }
+
+    &-Primary400 {
+        color: $primary400;
+    }
+
+    &-Primary500 {
+        color: $primary500;
+    }
+
+    &-Primary600{
+        color: $primary600;
+    }
+
+    &-Primary700{
+        color: $primary700;
+    }
+
+    &-Secondary300{
+        color: $secondary300;
+    }
+
+    &-Secondary400{
+        color: $secondary400;
+    }
+
+    &-Secondary500{
+        color: $secondary500;
+    }
+
+    &-Terciary{
+        color: $terciaryOrange;
+    }
+
+}
+
+.bg{
+    &-Primary300 {
+        background-color: $primary300;
+    }
+
+    &-Primary400 {
+        background-color: $primary400;
+    }
+
+    &-Primary500 {
+        background-color: $primary500;
+    }
+
+
+    &-Primary600 {
+        background-color: $primary600;
+    }
+
+    &-Primary700 {
+        background-color: $primary700;
+    }
+
+    &-Secondary300{
+        background-color: $secondary300;
+    }
+
+    &-Secondary400{
+        background-color: $secondary400;
+    }
+
+    &-Secondary500{
+        background-color: $secondary500;
+    }
+
+    &-TerciaryOrange{
+        background-color: $terciaryOrange;
+    }
+
+    &-TerciaryGreen{
+        background-color: $terciaryGreen;
+    }
+
+
+}
+
+.border{
+    &-Primary300 {
+        border: 1px solid $primary300;
+    }
+
+    &-Primary400 {
+        border: 1px solid$primary400;
+    }
+
+    &-Primary500 {
+        border: 1px solid $primary500;
+    }
+
+
+    &-Primary600 {
+        border: 1px solid $primary600;
+    }
+
+    &-Primary700 {
+        border: 1px solid $primary700;
+    }
+
+    &-Secondary300{
+        border: 1px solid $secondary300;
+    }
+
+    &-Secondary400{
+        border: 1px solid $secondary400;
+    }
+
+    &-Secondary500{
+        border: 1px solid $secondary500;
+    }
+
+    &-TerciaryOrange{
+        border: 1px solid $terciaryOrange;
+    }
+
+    &-TerciaryGreen{
+        border: 1px solid $terciaryGreen;
+    }
+
+
+}

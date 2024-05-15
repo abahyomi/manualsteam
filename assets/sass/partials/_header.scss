@@ -1,0 +1,48 @@
+.Header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 0.5px solid $secondary500;
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        img{
+            height: 35px;
+        }
+
+        :hover {
+            cursor: pointer;
+        }
+
+        img {
+            transition: 400ms;
+            &:hover {
+                transform: scale(103%);
+            }
+        }
+    }
+
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding-left: 2rem;
+        border-left: 1px solid $primary500;
+
+        @media (max-width:500px) {
+            padding: 0rem 1rem;
+            h5{
+                display: none;
+            }
+            
+        }
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

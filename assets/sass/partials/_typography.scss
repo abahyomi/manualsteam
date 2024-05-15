@@ -1,0 +1,85 @@
+.display2{
+    font-family: "Semi-Bold";
+    font-size: 8rem; ;
+}
+
+.display1{
+    font-family: "Semi-Bold";
+    font-size:6rem;
+}
+
+h1, .h1{
+   font-family: "Semi-Bold";
+   font-size: 3rem;
+   margin: 0rem;
+}
+
+h2, .h2{
+    font-family: "Semi-Bold";
+    font-size: 2.5rem;
+    margin: 0rem;
+}
+
+h3, .h3{
+    font-family: "Semi-Bold";
+    font-size: 2.2rem;
+    margin: 0rem;
+}
+
+h4, .h4{
+    font-family: "Semi-Bold";
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0rem;
+
+}
+
+h5, .h5{
+    font-family: "Medium";
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+h6, .h6{
+    font-family: "Medium";
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+label{
+    font-family: "Helvetica";
+}
+
+p, .p{
+    font-family: "Helvetica";
+    font-size: 0.9rem;
+    margin: 1rem;
+    max-width: 60%;
+    margin: 0;
+}
+
+li{
+    font-family: "Helvetica";
+}
+
+.small{
+    font-family: "Helvetica";
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+
+span, .span{
+    font-family: "Helvetica";
+    font-size:1rem;
+    margin: 0;
+}
+
+.special{
+    font-family: "Helvetica";
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+}

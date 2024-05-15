@@ -1,0 +1,20 @@
+.Nav_header {
+  padding: 2rem 0;
+}
+.Nav_header .navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.Nav_header .navbar .links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.Nav_header .navbar a {
+  font-family: "Helvetica";
+  text-decoration: none;
+}/*# sourceMappingURL=nav_header.css.map */

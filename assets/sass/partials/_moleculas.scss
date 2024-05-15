@@ -1,0 +1,110 @@
+.search{
+
+    &-dark{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+        border-radius: 9px;
+        background-color: $secondary500;
+        transition: 200ms;
+
+        &:hover{
+            cursor: pointer;
+            transition: 200ms;
+            border: 1px solid $primary500;
+        }
+    }
+
+    &-light{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+        border-radius: 9px;
+        background-color: $primary300;
+        transition: 200ms;
+        border: 1px solid $secondary500;
+
+        &:hover{
+            cursor: pointer;
+            transition: 200ms;
+            
+        }
+
+    }
+}
+
+
+label{
+    transition: 500ms;
+    
+    .alert_error{
+        background-color: $terciaryOrange;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+        border-radius: 9px;
+
+        .alertClose {
+            padding-top: 10px;
+            font-size: 12px;
+            align-items: center;
+            margin: 0;
+          }
+          
+    }
+
+    .alert_succes{
+        background-color: $secondary500;
+        color: $primary300;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+        border-radius: 9px;
+
+        .alertClose {
+            padding-top: 10px;
+            font-size: 12px;
+            align-items: center;
+            margin: 0;
+          }
+          
+    }
+    
+    .alert_notice{
+        background-color:$primary500;
+        color: $secondary500;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+        border-radius: 9px;
+
+        .alertClose {
+            padding-top: 10px;
+            font-size: 12px;
+            align-items: center;
+            margin: 0;
+          }
+          
+    }
+
+    &:hover{
+        transform: scale(105%);
+        cursor: pointer;
+        transition: 200ms;
+    }
+
+    .alertCheckbox {
+        display: none;
+      }
+
+}

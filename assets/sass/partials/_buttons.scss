@@ -1,0 +1,187 @@
+.button_section{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0rem;
+    gap: 1rem;
+    border-bottom: 1px solid $secondary500;
+
+    .muestra_botones{
+        display: flex;
+        flex-direction: row;
+        padding: 2rem 0rem;
+        gap: 3rem;
+        align-items: center;
+
+        @media (max-width:500px){
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .tipo{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .icon_show{
+            @media (max-width:500px){
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+            }
+        }
+
+        .subt{
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid $secondary500;
+            padding-right: 2rem;
+
+            @media (max-width:500px){
+                padding-bottom: 1rem;
+                border-right: 0px;;
+                border-bottom: 1px solid $secondary500;
+            }
+        }
+    } 
+}
+
+button, .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    padding: 1rem 2rem;
+    border-radius: 9px;
+}
+
+.btn-primary{
+   
+    &-dark_main{
+        background-color: $secondary500;
+        color: $primary500;
+        transition: 300ms;
+        
+
+        &:hover{
+            cursor: pointer;
+            background-color: $secondary400;
+            transition: 100ms;
+        }
+
+        &:active{
+            transform: scale(95%);
+            border: 1px solid $primary400;
+            box-shadow: 0px 4px 9px rgba(21, 46, 55, 0.41);
+            border-radius: 9px;
+            transition: 100ms;
+        }
+    }
+
+    &-dark_secondary{
+        background-color: $secondary400;
+        color: $primary300;
+        transition: 300ms;
+        
+        &:hover{
+            cursor: pointer;
+            background-color: $secondary300;
+            transition: 100ms;
+        }
+        &:active{
+            transform: scale(95%);
+            border: 1px solid $primary300;
+            border-radius: 9px;
+            transition: 100ms;
+        }
+    }
+
+    &-light{ 
+        background-color: $primary300;
+        color: $secondary500;
+        border: 1px solid $secondary500;
+
+        &:hover{
+            cursor: pointer;
+            background-color: $primary500;
+            transition: 100ms;
+        }
+
+        &:active{
+            transform: scale(95%);
+            box-shadow: 0px 4px 13px rgba(213, 178, 32, 0.71);
+            border-radius: 9px;
+            transition: 100ms;
+        }
+    }
+}
+
+
+.btn-icon{
+    &-dark_main{
+        background-color: $secondary500;
+        color: $primary500;
+        transition: 300ms;
+        &:hover{
+            cursor: pointer;
+            background-color: $secondary400;
+            transition: 100ms;
+        }
+        &:active{
+            transform: scale(95%);
+            border: 1px solid $primary400;
+            box-shadow: 0px 4px 9px rgba(21, 46, 55, 0.41);
+            border-radius: 9px;
+            transition: 100ms;
+        }
+    }
+    &-dark_secondary{
+        background-color: $secondary400;
+        color: $primary300;
+        transition: 300ms;
+    
+        &:hover{
+            cursor: pointer;
+            background-color: $secondary300;
+            transition: 100ms;
+        }
+
+        &:active{
+            transform: scale(95%);
+            border: 1px solid $primary300;
+            border-radius: 9px;
+            transition: 100ms;
+        }
+    }
+    
+    &-light{ 
+        background-color: $primary300;
+        color: $secondary500;
+       
+        &:hover{
+            cursor: pointer;
+            background-color: $primary500;
+            transition: 100ms;
+        }
+
+        &:active{
+            transform: scale(95%);
+            box-shadow: 0px 4px 13px rgba(213, 178, 32, 0.71);
+            border-radius: 9px;
+            transition: 100ms;
+        }
+    }
+}
+
+
+.btn-ghost{
+    color: $secondary500;
+    transition: 300ms;
+    
+    &:hover{
+        cursor: pointer;
+        background-color: $secondary500;
+        transition: 100ms;
+        color: $primary500;
+    }
+}
