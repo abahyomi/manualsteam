@@ -517,6 +517,18 @@ span {
   border-bottom: 0.5px solid rgb(180, 200, 231);
   margin-bottom: 2rem;
 }
+.hero .responsive-video {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 2rem;
+  transition: 400ms;
+}
+.hero .responsive-video:hover {
+  cursor: pointer;
+  transform: scale(102%);
+  box-shadow: 0 20px 50px rgba(255, 255, 255, 0.041);
+}
 .hero img {
   width: 100%;
   max-width: 1200px;
