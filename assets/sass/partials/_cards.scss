@@ -1,7 +1,30 @@
 .Cards {
+    display: flex;
+    flex-direction: column;
     padding: 2rem 0rem;
-    gap: 1rem;
+    gap: 2rem;
     border-bottom: 1px solid $secondary500;
+
+    .main {
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem
+        ;
+        img {
+            max-width: 1300px;
+        }
+    }
+
+    .item{
+        img {
+            max-width: 500px;
+        }
+    }
+
+    
+
+    
 
     .card1_main {
         margin: 1rem 0rem;
@@ -12,11 +35,11 @@
         background-color: $secondary500;
         transition: 400ms;
 
-        @media (max-width:500px){
-         flex-direction: column;
-         width: 28rem;
+        @media (max-width:500px) {
+            flex-direction: column;
+            width: 28rem;
 
-         }
+        }
 
         &:hover {
             transform: scale(101%);
@@ -31,18 +54,19 @@
                 width: 20rem;
                 height: 100%;
 
-                @media (max-width:500px){
+                @media (max-width:500px) {
                     width: 27rem;
-                    }
+                }
             }
         }
+
         .card_text {
             gap: 1rem;
             padding: 3rem 1rem;
 
-            @media (max-width:500px){
+            @media (max-width:500px) {
                 padding: 1rem 2rem;
-                }
+            }
 
             .text_title {
                 h3 {
@@ -61,6 +85,7 @@
                 max-width: 80%;
             }
         }
+
         .card_button {
             display: flex;
             align-items: flex-end;
@@ -68,7 +93,7 @@
             padding: 2rem;
             gap: 1rem;
 
-             p{
+            p {
                 max-width: 100%;
                 margin: 0;
             }
@@ -85,10 +110,10 @@
         transition: 400ms;
         border: 1px solid $secondary500;
 
-        @media (max-width:500px){
+        @media (max-width:500px) {
             flex-direction: column;
             max-width: 28rem;
-            }
+        }
 
         &:hover {
             transform: scale(101%);
@@ -98,19 +123,20 @@
 
         .card_img {
             border-left: 1rem solid $secondary500;
-            @media (max-width:500px){
+
+            @media (max-width:500px) {
                 height: 100%;
                 width: 100%;
-                }
+            }
 
             img {
                 width: 20rem;
                 height: 100%;
 
-                @media (max-width:500px){
+                @media (max-width:500px) {
                     width: 27rem;
                     height: 100%;
-                    }
+                }
             }
         }
 
@@ -119,9 +145,9 @@
             padding: 3rem 1rem;
             color: $secondary500;
 
-            @media (max-width:500px){
+            @media (max-width:500px) {
                 padding: 1rem 2rem;
-                }
+            }
 
             .text_title {
                 h3 {
@@ -155,29 +181,32 @@
         }
     }
 }
+
 .card_poster {
     display: flex;
     flex-direction: row;
     gap: 3rem;
 
-    @media (max-width:500px){
+    @media (max-width:500px) {
         flex-direction: column;
     }
 
     .card_poster_main {
         background-color: $primary500;
-        @media (max-width:500px){
+
+        @media (max-width:500px) {
             width: 28rem;
-         }
-        
+        }
+
 
         .poster_img {
-            
+
             img {
                 width: 25rem;
                 height: 100%;
-                @media (max-width:500px){
-                   width: 28rem;
+
+                @media (max-width:500px) {
+                    width: 28rem;
                 }
             }
         }
@@ -190,16 +219,17 @@
             padding: 2rem;
 
             .poster_text {
-                h4{
+                h4 {
                     font-size: 1.5rem;
                 }
             }
 
-            p{
+            p {
                 display: flex;
                 height: 2rem;
                 font-size: 12px;
-                .button{
+
+                .button {
                     padding: 1rem;
                 }
             }
@@ -209,17 +239,19 @@
     .card_poster_light {
         background-color: $primary300;
         border: 1px solid $secondary500;
-        @media (max-width:500px){
+
+        @media (max-width:500px) {
             width: 28rem;
-         }
+        }
 
         .poster_img {
             img {
                 width: 25rem;
                 height: 100%;
-                @media (max-width:500px){
+
+                @media (max-width:500px) {
                     width: 28rem;
-                 }
+                }
             }
         }
 
@@ -231,17 +263,17 @@
             padding: 2rem;
 
             .poster_text {
-                h4{
+                h4 {
                     font-size: 1.5rem;
                 }
             }
 
-            p{
+            p {
                 display: flex;
                 height: 2rem;
                 font-size: 12px;
 
-                .button{
+                .button {
                     padding: 1rem;
                 }
             }

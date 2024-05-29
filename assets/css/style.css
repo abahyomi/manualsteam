@@ -509,6 +509,10 @@ span {
   gap: 1rem;
 }
 
+.figmabtn {
+  width: 120px;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -998,9 +1002,22 @@ label .alertCheckbox {
 }
 
 .Cards {
+  display: flex;
+  flex-direction: column;
   padding: 2rem 0rem;
-  gap: 1rem;
+  gap: 2rem;
   border-bottom: 1px solid #1d1e20;
+}
+.Cards .main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.Cards .main img {
+  max-width: 1300px;
+}
+.Cards .item img {
+  max-width: 500px;
 }
 .Cards .card1_main {
   margin: 1rem 0rem;
@@ -1229,6 +1246,14 @@ label .alertCheckbox {
   gap: 1rem;
   border-bottom: 1px solid #919697;
 }
+.Nav_header img {
+  max-width: 1500px;
+  transition: 300ms;
+}
+.Nav_header img:hover {
+  transform: scale(102%);
+  cursor: pointer;
+}
 .Nav_header .navbar {
   max-width: 100%;
   height: 100px;
@@ -1306,6 +1331,9 @@ label .alertCheckbox {
   gap: 1rem;
   padding: 2rem 0rem;
   border-bottom: 1px solid #1d1e20;
+}
+.Forms img {
+  max-width: 800px;
 }
 .Forms .formulario {
   display: flex;

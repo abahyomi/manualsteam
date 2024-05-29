@@ -4,6 +4,10 @@
     gap: 1rem;
     padding: 2rem 0rem;
     border-bottom: 1px solid $secondary500;
+
+    img{
+        max-width: 800px;
+    }
     .formulario{
         display: flex;
         flex-direction: column;

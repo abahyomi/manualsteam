@@ -85,9 +85,14 @@
             <div data-aos="fade-right" data-aos-duration="2200" class="hero">
                 <h1>¡Bienvenidos a Steam!</h1>
                 <p>En esta página se mostrará el manual de marca para el rediseño de Steam, realizado por el grupo
-                    5 de 3ºGB: Irene, Victor, Abahyomi y Filipa. En el se encuentras los componentes para el diseño de
-                    la web, la creación del imagotipo y el funcionamiento conjunto del rediseño.
+                    5 de 3ºGB: Irene, Victor, Abahyomi y Filipa. En el se encuentran los componentes principales para el
+                    diseño de
+                    la web, la creación del imagotipo y el funcionamiento en conjunto del rediseño. Para ver el rediseño completo y su prototipado haga click en el siguiente botón:
                 </p>
+
+                <a class="figmabtn" href="https://www.figma.com/design/pz1VGyjwPNzuIrCJonMEF4/LAB-%2F-Proyectos?node-id=553-1838&t=sQtrBcyE2mamj5fF-1"
+                target="_blank" rel="noopener noreferrer"><span class="button btn-primary-dark_secondary">Prototipo</span></a>
+
                 <video class="responsive-video" controls autoplay src="assets/img/reveal 01.mp4"></video>
 
                 <section class="introducion">
@@ -521,17 +526,10 @@
 
             <section id="Search" class="Inputs" data-aos="fade-down" data-aos-duration="1200">
                 <h1>Search Bar</h1>
+                <p>acompañadas de filtrado</p>
 
-                <div class="search-dark">
-                    <div class="btn-icon-dark_main material-symbols-outlined">Search</div>
-                    <input type="search" class="input_dark" id="query" name="q" placeholder="Search...">
-                </div>
+                <img src="./assets/img/search.png" alt="">
 
-
-                <div class="search-light">
-                    <div class="btn-icon-light material-symbols-outlined">Search</div>
-                    <input type="search" class="input_light" id="query" name="q" placeholder="Search...">
-                </div>
 
                 <h4>Clases css</h4>
                 <p>search-dark</p>
@@ -545,14 +543,14 @@
 
                 <label class="alert">
                     <div class="alert_succes">
-                        <span class="alertClose">X</span>
+
                         <h5 class="alertText small"> ACCIÓN REALIZADA CON EXITO </h5>
                     </div>
                 </label>
 
                 <label class="alert">
                     <div class="alert_notice">
-                        <span class="alertClose">X</span>
+
                         <h5 class="alertText small"> LEE LA SIGUIENTE INFORMACIÓN! </h5>
                     </div>
                 </label>
@@ -560,7 +558,7 @@
                 <label class="alert">
                     <input type="checkbox" class="alertCheckbox" autocomplete="off" />
                     <div class="alert_error">
-                        <span class="alertClose">X</span>
+
                         <h5 class="alertText small"> UPS! PARECE QUE ALGO HA SALIDO MAL </h5>
                     </div>
                 </label>
@@ -575,57 +573,51 @@
             <section id="Cards" class="Cards" data-aos="fade-down" data-aos-duration="1200">
 
                 <h1>Cards</h1>
-                <p>dos estilos de cards con variaciones, incluye bloque de dos botones</p>
+
+                <div class="main">
+                    <h3>Main card</h3>
+                    <p>Esta es la construcción principal de las Cards para el rediseño, de esta surgirán las distintas
+                        variantes que se podrán observar en Steam</p>
+                    <img src="./assets/img/mainCard.png" alt="">
+                </div>
+
+                <div class="item">
+                    <h3>Item Card</h3>
+                    <img class="itemcard" src="./assets/img/item card.png" alt="">
+                </div>
+
+                <div class="main">
+                    <h3>Article Card</h3>
+                    <img class="itemcard" src="./assets/img/articleCard.png" alt="">
+                </div>
+
+
+                <div class="mobile">
+                    <h3>Mobile Card</h3>
+                    <img class="itemcard" src="./assets/img/mobileCard.png" alt="">
+                </div>
+
 
 
             </section>
 
             <section id="Nav_header" class="Nav_header" data-aos="fade-down" data-aos-duration="1200">
-
-                <h1>Nav and Header</h1>
-                <p>Header con barra de navegación incluida</p>
-
-                <div class="navbar">
-                    <div class="logo">
-                        <img src="assets/img/Logo Steam.svg" alt="">
-                    </div>
-                    <ul class="links">
-                        <li>SteamCreate</li>
-                        <li>Tienda</li>
-                        <li>Comunidad</li>
-            
-                    </ul>
-
-                    
-                    <div class="toggle_btn">
-                        <div class="material-symbols-outlined color-Primary500">menu</div>
-                    </div>
-                </div>
+                <h1>Header</h1>
+                <img src="./assets/img/header.png" alt="">
             </section>
 
             <section id="Forms" class="Forms" data-aos="fade-down" data-aos-duration="1200">
-                <h1>Form</h1>
+                <h1>Forms</h1>
                 <p>Form para la lógica de inicio de sesión</p>
-
-                <form action="Login" class="formulario">
-                    <h4>User Login</h4>
-                    <label for="Email">Email/Usuario</label>
-                    <input class="btn-primary-dark_main" type="email" name="Email" placeholder="ragnarok@example.com">
-                    <label for="">Password</label>
-                    <input class="btn-primary-dark_main" type="password" name="Password" placeholder="ragnarok1234">
-
-                    <div class="remember">
-                        <input class="checkbox" type="checkbox">
-                        <label class="small" for="remember_check">Recordar contraseña</label>
-                    </div>
-
-                    <div class="btn_forms">
-                        <input class="btn-primary-dark_secondary" type="reset">
-                        <input class="btn-icon-dark_main" type="submit">
-                        <p class="small">si no tienes cuenta: <a class="small" href="">Registrate aquí</a></p>
-                    </div>
-                </form>
+                <img src="./assets/img/sesion.png" alt="">
             </section>
+
+            <section class="prev"></section>
+            <h1>Previsualización de la web</h1>
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1300" height="850"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fpz1VGyjwPNzuIrCJonMEF4%2FLAB-%252F-Proyectos%3Fpage-id%3D553%253A1838%26node-id%3D1052-1924%26viewport%3D619%252C-20838%252C0.42%26t%3DxZH7SDfY5V0Hkgk3-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D1066%253A8031"
+                allowfullscreen></iframe>
+
 
         </div>
     </div>
