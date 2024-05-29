@@ -8,6 +8,11 @@
     img{
         max-width: 800px;
     }
+
+    @media (max-width:500px) {
+        max-width: 350px;
+      }
+      
     .formulario{
         display: flex;
         flex-direction: column;

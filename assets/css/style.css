@@ -911,6 +911,11 @@ input {
   color: #04050E;
 }
 
+@media (max-width: 500px) {
+  .search img {
+    max-width: 350px;
+  }
+}
 .search-dark {
   display: flex;
   flex-direction: row;
@@ -1016,8 +1021,23 @@ label .alertCheckbox {
 .Cards .main img {
   max-width: 1300px;
 }
+@media (max-width: 500px) {
+  .Cards .main img {
+    max-width: 350px;
+  }
+}
+@media (max-width: 500px) {
+  .Cards .main {
+    max-width: 350px;
+  }
+}
 .Cards .item img {
   max-width: 500px;
+}
+@media (max-width: 500px) {
+  .Cards .item img {
+    max-width: 350px;
+  }
 }
 .Cards .card1_main {
   margin: 1rem 0rem;
@@ -1246,6 +1266,11 @@ label .alertCheckbox {
   gap: 1rem;
   border-bottom: 1px solid #919697;
 }
+@media (max-width: 500px) {
+  .Nav_header {
+    display: none;
+  }
+}
 .Nav_header img {
   max-width: 1500px;
   transition: 300ms;
@@ -1335,6 +1360,11 @@ label .alertCheckbox {
 .Forms img {
   max-width: 800px;
 }
+@media (max-width: 500px) {
+  .Forms {
+    max-width: 350px;
+  }
+}
 .Forms .formulario {
   display: flex;
   flex-direction: column;
@@ -1410,9 +1440,15 @@ a {
     grid-template-columns: 1fr;
     grid-template-rows: 80px 1fr;
     max-width: 100vw;
+    overflow: hidden;
   }
   .Framework p {
     max-width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .Framework .prev {
+    display: none;
   }
 }
 

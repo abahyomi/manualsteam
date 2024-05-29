@@ -59,11 +59,19 @@ a {
         grid-template-columns: 1fr;
         grid-template-rows: 80px 1fr;
         max-width: 100vw;
+        overflow: hidden;
  
 
         p {
             max-width: 90%;
         }
+    }
+
+    .prev{
+    @media (max-width:500px) {
+ display: none;
+    }
+
     }
 }
 

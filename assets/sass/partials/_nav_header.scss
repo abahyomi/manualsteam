@@ -3,6 +3,10 @@
     gap: 1rem;
     border-bottom: 1px solid $secondary400;
 
+    @media (max-width:500px) {
+        display: none;
+      }
+
     img{
         max-width: 1500px;
         transition: 300ms;
