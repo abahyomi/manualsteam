@@ -192,7 +192,7 @@ span, .span {
 #preloader {
   width: 100vw;
   height: 100vh;
-  background: #04050E;
+  background-color: #04050E;
   position: fixed;
   display: grid;
   align-items: center;
@@ -202,7 +202,7 @@ span, .span {
 .prelo_text {
   font-family: "Light";
   color: #fff;
-  letter-spacing: 1rem;
+  letter-spacing: 0.5rem;
   pointer-events: none;
   position: relative;
   top: -4rem;
@@ -1481,11 +1481,16 @@ a {
   position: fixed;
   top: 100px;
   left: 0;
-  width: 220px; /* Adjust width as needed */
-  height: 100vh; /* Make menu full height of viewport */
-  overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
-  z-index: 1000; /* Ensure menu is on top of other content */
-  box-shadow: 0 20px 50px rgba(255, 255, 255, 0.041); /* Optional: Add box shadow */
+  width: 220px;
+  /* Adjust width as needed */
+  height: 100vh;
+  /* Make menu full height of viewport */
+  overflow-y: auto;
+  /* Enable vertical scrolling if content exceeds height */
+  z-index: 1000;
+  /* Ensure menu is on top of other content */
+  box-shadow: 0 20px 50px rgba(255, 255, 255, 0.041);
+  /* Optional: Add box shadow */
 }
 @media (max-width: 500px) {
   .Menu {
