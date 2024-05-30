@@ -1437,6 +1437,12 @@ img:hover {
   }
 }
 
+.mock {
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #fff;
+}
+
 * {
   font-size: 16px;
   box-sizing: border-box;
