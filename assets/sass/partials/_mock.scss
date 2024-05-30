@@ -1,0 +1,16 @@
+img{
+    max-width: 75vw;
+    height: auto;
+    overflow: hidden;
+    transition: 300ms;
+
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(102%);
+    }
+
+    @media (max-width:500px) {
+        max-width: 90vw;
+    }
+}

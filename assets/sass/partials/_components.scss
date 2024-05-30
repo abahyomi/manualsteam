@@ -1,4 +1,4 @@
-.figmabtn{
+.figmabtn {
     width: 120px;
 }
 
@@ -26,8 +26,7 @@
     }
 
     img {
-        width: 100%;
-        max-width: 1200px;
+        max-width: 75vw;
         height: auto;
         overflow: hidden;
         transition: 300ms;
@@ -40,7 +39,7 @@
         }
 
         @media (max-width:500px) {
-            max-width: 300px;
+            max-width: 90vw;
         }
     }
 
@@ -63,6 +62,7 @@
                     width: 200px;
 
                 }
+
                 @media (max-width:500px) {
                     flex-direction: column;
                 }
@@ -72,10 +72,12 @@
                 padding: 2rem;
                 display: flex;
                 gap: 4rem;
+                max-width: 88vw;
 
                 img {
-                    width: 200px;
+                    max-width: 70vw;
                 }
+
                 @media (max-width:500px) {
                     flex-direction: column;
                 }

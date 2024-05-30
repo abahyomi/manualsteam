@@ -534,8 +534,7 @@ span {
   box-shadow: 0 20px 50px rgba(255, 255, 255, 0.041);
 }
 .hero img {
-  width: 100%;
-  max-width: 1200px;
+  max-width: 75vw;
   height: auto;
   overflow: hidden;
   transition: 300ms;
@@ -547,7 +546,7 @@ span {
 }
 @media (max-width: 500px) {
   .hero img {
-    max-width: 300px;
+    max-width: 90vw;
   }
 }
 .hero .introducion {
@@ -577,9 +576,10 @@ span {
   padding: 2rem;
   display: flex;
   gap: 4rem;
+  max-width: 88vw;
 }
 .hero .introducion .logo .imagotipo img {
-  width: 200px;
+  max-width: 70vw;
 }
 @media (max-width: 500px) {
   .hero .introducion .logo .imagotipo {
@@ -1013,30 +1013,54 @@ label .alertCheckbox {
   gap: 2rem;
   border-bottom: 1px solid #1d1e20;
 }
+.Cards img {
+  max-width: 75vw;
+  height: auto;
+  overflow: hidden;
+  transition: 300ms;
+}
+.Cards img:hover {
+  cursor: pointer;
+  transform: scale(102%);
+}
+@media (max-width: 500px) {
+  .Cards img {
+    max-width: 90vw;
+  }
+}
 .Cards .main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 .Cards .main img {
-  max-width: 1300px;
+  max-width: 70vw;
+  height: auto;
+  overflow: hidden;
+  transition: 300ms;
+}
+.Cards .main img:hover {
+  cursor: pointer;
+  transform: scale(102%);
 }
 @media (max-width: 500px) {
   .Cards .main img {
-    max-width: 350px;
-  }
-}
-@media (max-width: 500px) {
-  .Cards .main {
-    max-width: 350px;
+    max-width: 90vw;
   }
 }
 .Cards .item img {
-  max-width: 500px;
+  max-width: 75vw;
+  height: auto;
+  overflow: hidden;
+  transition: 300ms;
+}
+.Cards .item img:hover {
+  cursor: pointer;
+  transform: scale(102%);
 }
 @media (max-width: 500px) {
   .Cards .item img {
-    max-width: 350px;
+    max-width: 90vw;
   }
 }
 .Cards .card1_main {
@@ -1395,6 +1419,22 @@ label .alertCheckbox {
 }
 .Forms .formulario .btn_forms p a:active {
   transform: scale(95%);
+}
+
+img {
+  max-width: 75vw;
+  height: auto;
+  overflow: hidden;
+  transition: 300ms;
+}
+img:hover {
+  cursor: pointer;
+  transform: scale(102%);
+}
+@media (max-width: 500px) {
+  img {
+    max-width: 90vw;
+  }
 }
 
 * {
